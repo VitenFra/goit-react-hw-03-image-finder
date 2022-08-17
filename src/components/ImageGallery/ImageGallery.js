@@ -17,11 +17,11 @@ const ImageGallery = ({images, bigImage}) => (
 </ul>
 );
 ImageGallery.propTypes = {
-    images: PropTypes.array,
-    bigImage: PropTypes.func,
-    id: PropTypes.number,
-    webkitURL: PropTypes.string,
-    largeImageURL: PropTypes.string
+    images: PropTypes.array.isRequired,
+    bigImage: PropTypes.func.isRequired,
+    id: PropTypes.number.isRequired,
+    webkitURL: PropTypes.string.isRequired,
+    largeImageURL: PropTypes.string.isRequired
 };
 
 export default ImageGallery;

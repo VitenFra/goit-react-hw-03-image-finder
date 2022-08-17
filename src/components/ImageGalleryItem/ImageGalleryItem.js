@@ -9,8 +9,8 @@ const ImageGalleryItem = ({ webURL, onClick}) => (
 )
 
 ImageGalleryItem.propTypes = {
-    webURL: PropTypes.string,
-    onClick: PropTypes.func
+    webURL: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired
    
 };
 export default ImageGalleryItem;

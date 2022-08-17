@@ -58,7 +58,7 @@ class App extends Component {
       
   handleLoadMore = () => {
       this.setState(prevState => ({
-          currentPage: prevState.currentPage + 2,
+          currentPage: prevState.currentPage + 1,
       }));  
   } 
 

@@ -6,10 +6,11 @@ import PropTypes from 'prop-types'
 
 
 class Searchbar extends Component {
-
+    
     state = {
         searchQuery: ''
     };
+
 
     handleSubmit = event => {
         event.preventDefault();
@@ -20,7 +21,6 @@ class Searchbar extends Component {
         }
 
         this.props.onSubmit(this.state.searchQuery);
-        this.setState({ searchQuery: '' });
         
     };
 
@@ -55,7 +55,7 @@ class Searchbar extends Component {
 }
 
 Searchbar.propTypes = {
-    onSubmit: PropTypes.func,
+    onSubmit: PropTypes.func.isRequired,
 }
 
 export default Searchbar;

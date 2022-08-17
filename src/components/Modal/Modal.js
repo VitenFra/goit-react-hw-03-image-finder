@@ -28,9 +28,9 @@ class Modal extends Component {
 
 
 Modal.propTypes = {
-    toogleModal: PropTypes.func,
-    children: PropTypes.node,
-    keyCloseModal: PropTypes.func,
+    toogleModal: PropTypes.func.isRequired,
+    children: PropTypes.node.isRequired,
+    keyCloseModal: PropTypes.func.isRequired,
 };
   
 
